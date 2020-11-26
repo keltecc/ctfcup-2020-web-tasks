@@ -14,10 +14,10 @@ RUN mkdir -p /var/security/
 
 WORKDIR /var/security/
 
-COPY security.py libcrypt.py flag_ff9b671626b8477012f041dc42d76c885341bb35c5290fe4a2ae965d80d70a12.txt ./
+COPY security_7b6ae759.py libcrypt.py flag_ff9b671626b8477012f041dc42d76c885341bb35c5290fe4a2ae965d80d70a12.txt ./
 
 COPY templates ./templates
 
 USER security
 
-ENTRYPOINT python3.7 security.py
+ENTRYPOINT python3.7 security_7b6ae759.py
